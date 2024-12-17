@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity() {
                     dialog, which ->
                     val intent: Intent = Intent(Intent.ACTION_VIEW)
                     intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                    intent.setData(Uri.parse("https://yurihou.github.io"))
+                    intent.setData(Uri.parse("https://github.com/Yurihou/NFC_QSL_Android/"))
                     startActivity(intent)
                 }
                 .create().show()
