@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NFCLockUnlockActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password (4-Byte Hexadecimal, 8-digit 0-9 or A-F)" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789ABCDEFabcdef"
+            android:ems="10"
+            android:inputType="text|textPassword"
+            android:maxLength="8" />
+
+        <TextView
+            android:id="@+id/textViewCFM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password" />
+
+        <EditText
+            android:id="@+id/editTextCFM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789ABCDEFabcdef"
+            android:ems="10"
+            android:inputType="text|textPassword"
+            android:maxLength="8" />
+
+        <CheckBox
+            android:id="@+id/checkBoxShowPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Password" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonLU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Lock this NFC QSL" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
