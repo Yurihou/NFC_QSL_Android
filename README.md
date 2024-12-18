@@ -21,6 +21,13 @@ After locking, the QSL info will protected. You can only change QSL info after "
 ## Supported NFC tag type
 - NXP Ntag 213/215/216
 
+## Data format
+### NXP Ntag 213/215/216
+Take Ntag 213 as an example, it has totally 180 bytes register, with 144 bytes free for users to edit and other 36 bytes for fixed using, such as serial number, type identification, password and so on. We use these 144 free bytes to store QSL info, such as callsign of both sides, QSO date and time and so on. Detailed info is shown below.
+
+![image](https://github.com/user-attachments/assets/d0d064b2-ad67-414e-8242-38b747fac358)
+
+
 ## Further to do
 - Information CRC verification
 - ADIF input/output
